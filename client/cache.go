@@ -105,6 +105,8 @@ func (c *LookupCache) IncAttempt(label string) {
 		c.c[key] = aa
 	}
 }
+
+// Set saves the resolved address or the attempt
 func (c *LookupCache) Set(label string, addrs []string) {
 	c.mu.Lock()
 	defer c.mu.Unlock()

@@ -19,12 +19,17 @@ type Client struct {
 	maxRetryCount uint8
 }
 
+// ResponseType is the type of response.
 type ResponseType int
 
 const (
+	// ResponseTypeUnknown is an unknown response.
 	ResponseTypeUnknown ResponseType = iota
+	// ResponseTypeDelegation is a delegation response.
 	ResponseTypeDelegation
+	// ResponseTypeCNAME is a CNAME response.
 	ResponseTypeCNAME
+	// ResponseTypeFinal is a final response.
 	ResponseTypeFinal
 )
 
@@ -37,6 +42,7 @@ type Response struct {
 	Err    error
 }
 
+// Responses is a slice of Response.
 type Responses []Response
 
 // Fastest returns the fastest success response or nil.
@@ -53,6 +59,7 @@ func (rs Responses) Fastest() *Response {
 	return &fr
 }
 
+// Tracer is the tracer structure.
 type Tracer struct {
 	GotIntermediaryResponse func(i int, m *dns.Msg, rs Responses, rtype ResponseType)
 	FollowingCNAME          func(domain, target string)

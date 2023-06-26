@@ -1,5 +1,9 @@
 # dnstrace
 
+It's a better form of this project :)))))
+
+---
+
 This tool performs a DNS resolution by tracing the delegation path from the root name servers, and by following the CNAME chain. Each query is reported with statistics about all delegated name servers.
 
 ## Features
@@ -12,31 +16,19 @@ This tool performs a DNS resolution by tracing the delegation path from the root
 
 ## Usage
 
-```
+```bash
 Usage: dnstrace [qtype] <domain>
 
   -color
-    	Enable/disable colors (default true)
+     Enable/disable colors (default true)
 ```
 
-![](screenshot.png)
+![sc](screenshot.png)
 
 ## Install
 
-Using [homebrew](http://brew.sh/):
-
-```
-brew install rs/tap/dnstrace
+```bash
+go install github.com/hatamiarash7/dnstrace@latest
 ```
 
-From source:
-
-```
-go install github.com/rs/dnstrace@latest
-```
-
-Or download a [binary package](https://github.com/rs/dnstrace/releases/latest).
-
-# License
-
-All source code is licensed under the [MIT License](https://raw.github.com/rs/dnstrace/master/LICENSE).
+Or download a [binary package](https://github.com/hatamiarash7/dnstrace/releases/latest).
