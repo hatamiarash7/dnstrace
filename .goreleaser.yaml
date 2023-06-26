@@ -26,11 +26,5 @@ changelog:
     exclude:
       - "^docs:"
       - "^test:"
-upx:
-  - enabled: true
-    goos: [linux, darwin]
-    compress: best
-    lzma: true
-    brute: true
 release:
   name_template: "{{.ProjectName}}-v{{.Version}}"
