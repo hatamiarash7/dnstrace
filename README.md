@@ -27,8 +27,16 @@ Usage: dnstrace [qtype] <domain>
 
 ## Install
 
+Using Golang:
+
 ```bash
 go install github.com/hatamiarash7/dnstrace@latest
+```
+
+Using brew:
+
+```bash
+brew install hatamiarash7/tap/dnstrace
 ```
 
 Or download a [binary package](https://github.com/hatamiarash7/dnstrace/releases/latest).
