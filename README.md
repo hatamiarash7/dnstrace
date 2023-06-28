@@ -1,8 +1,6 @@
 # dnstrace
 
-It's a better form of this project :)))))
-
----
+[![Release](https://github.com/hatamiarash7/dnstrace/actions/workflows/release.yml/badge.svg)](https://github.com/hatamiarash7/dnstrace/actions/workflows/release.yml) ![GitHub release (release name instead of tag name)](https://img.shields.io/github/v/release/hatamiarash7/dnstrace) ![GitHub](https://img.shields.io/github/license/hatamiarash7/dnstrace)
 
 This tool performs a DNS resolution by tracing the delegation path from the root name servers, and by following the CNAME chain. Each query is reported with statistics about all delegated name servers.
 
