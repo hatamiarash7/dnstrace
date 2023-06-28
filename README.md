@@ -21,7 +21,7 @@ Usage: dnstrace [qtype] <domain>
      Enable/disable colors (default true)
 ```
 
-![sc](screenshot.png)
+![sc](.github/sc.png)
 
 ## Install
 
