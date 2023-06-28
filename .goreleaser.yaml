@@ -28,3 +28,23 @@ changelog:
       - "^test:"
 release:
   name_template: "{{.ProjectName}}-v{{.Version}}"
+brews:
+  - name: dnstrace
+    download_strategy: CurlDownloadStrategy
+    commit_author:
+      name: Arash Hatami
+      email: info@arash-hatami.ir
+    homepage: "https://github.com/hatamiarash7/dnstrace"
+    description: " DNS resolution tracing tool."
+    license: "MIT"
+    repository:
+      owner: hatamiarash7
+      name: homebrew-tap
+      branch: main
+      pull_request:
+        enabled: true
+        draft: false
+        base:
+          owner: hatamiarash7
+          name: homebrew-tap
+          branch: brews
