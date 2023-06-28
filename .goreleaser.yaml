@@ -37,14 +37,10 @@ brews:
     homepage: "https://github.com/hatamiarash7/dnstrace"
     description: " DNS resolution tracing tool."
     license: "MIT"
-    repository:
+    tap:
       owner: hatamiarash7
       name: homebrew-tap
       branch: main
       pull_request:
         enabled: true
-        draft: false
-        base:
-          owner: hatamiarash7
-          name: homebrew-tap
-          branch: brews
+        base: dnstrace
