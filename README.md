@@ -12,6 +12,8 @@ This tool performs a DNS resolution by tracing the delegation path from the root
 * Enable DNSSEC query option to better emulate name server queries
 * Compute the cold best path as if the resolver started with an empty cache to recurse queried name
 
+![sc](.github/sc.png)
+
 ## Usage
 
 ```bash
@@ -21,20 +23,20 @@ Usage: dnstrace [qtype] <domain>
      Enable/disable colors (default true)
 ```
 
-![sc](.github/sc.png)
-
 ## Install
 
-Using Golang:
+* Using Golang:
 
-```bash
-go install github.com/hatamiarash7/dnstrace@latest
-```
+  ```bash
+  go install github.com/hatamiarash7/dnstrace@latest
+  ```
 
-Using brew:
+* Using brew:
 
-```bash
-brew install hatamiarash7/tap/dnstrace
-```
+  ```bash
+  brew install hatamiarash7/tap/dnstrace
+  ```
 
-Or download a [binary package](https://github.com/hatamiarash7/dnstrace/releases/latest).
+* Using binary:
+
+  Download [binary package](https://github.com/hatamiarash7/dnstrace/releases/latest).
